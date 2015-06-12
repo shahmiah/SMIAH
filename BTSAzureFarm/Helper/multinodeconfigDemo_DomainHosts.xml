@@ -1,0 +1,103 @@
+<GlobalConfigurationData xmlns="http://schemas.microsoft.com/biztalk/utilities/azure" xmlns:i="http://www.w3.org/2/XMLSchema-instance">
+  <DatabaseData>
+    <BAMArchiveDatabaseName>BAMArchive</BAMArchiveDatabaseName>
+    <BAMArchiveDatabaseServer>SQLCOMPUTERNAME</BAMArchiveDatabaseServer>
+    <BAMPrimaryImportDatabaseName>BAMPrimaryImport</BAMPrimaryImportDatabaseName>
+    <BAMPrimaryImportDatabaseServer>SQLCOMPUTERNAME</BAMPrimaryImportDatabaseServer>
+    <BusinessRulesDatabaseName>BusinessRulesDB</BusinessRulesDatabaseName>
+    <BusinessRulesDatabaseServer>SQLCOMPUTERNAME</BusinessRulesDatabaseServer>
+    <ManagementDatabaseName>BizTalkMgmtDB</ManagementDatabaseName>
+    <ManagementDatabaseServer>SQLCOMPUTERNAME</ManagementDatabaseServer>
+    <MessageBoxDatabaseName>BizTalkMsgBoxDB</MessageBoxDatabaseName>
+    <MessageBoxDatabaseServer>SQLCOMPUTERNAME</MessageBoxDatabaseServer>
+    <SSODatabaseName>SSODB</SSODatabaseName>
+    <SSODatabaseServer>SQLCOMPUTERNAME</SSODatabaseServer>
+    <TrackingDatabaseName>BizTalkDTADB</TrackingDatabaseName>
+    <TrackingDatabaseServer>SQLCOMPUTERNAME</TrackingDatabaseServer>
+  </DatabaseData>
+  <FeatureData>
+    <B2B>false</B2B>
+    <BAM>true</BAM>
+    <BRE>true</BRE>
+  </FeatureData>
+  <GroupAccountData>
+    <Administrator>DOMAINPREFIX\BizTalk Server Administrators</Administrator>
+    <B2BOperators>DOMAINPREFIX\BizTalk Server B2B Operators</B2BOperators>
+    <HostUsersGroup>DOMAINPREFIX\BizTalk Application Users</HostUsersGroup>
+    <IsolatedHostUsersGroup>DOMAINPREFIX\BizTalk Isolated Host Users</IsolatedHostUsersGroup>
+    <Operator>DOMAINPREFIX\BizTalk Server Operators</Operator>
+    <SsoAdministrator>DOMAINPREFIX\SSO Administrators</SsoAdministrator>
+    <SsoAffiliateAdministrators>DOMAINPREFIX\SSO Affiliate Administrators</SsoAffiliateAdministrators>
+  </GroupAccountData>
+  <Hosts>
+    <HostData>
+      <AuthenticationTrusted>false</AuthenticationTrusted>
+      <DoTracking>true</DoTracking>
+      <HostName>HOSTNAME1</HostName>
+      <Is32Bit>false</Is32Bit>
+      <IsDefault>false</IsDefault>
+      <Isolated>false</Isolated>
+      <ServerNames xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>BTS1COMPUTERNAME</a:string>
+        <a:string>BTS2COMPUTERNAME</a:string>
+      </ServerNames>
+      <ServiceAccountPassword>USERPASSWORD</ServiceAccountPassword>
+      <ServiceAccountUserName>USERACCOUNT</ServiceAccountUserName>
+    </HostData>
+    <HostData>
+      <AuthenticationTrusted>false</AuthenticationTrusted>
+      <DoTracking>false</DoTracking>
+      <HostName>HOSTNAME2</HostName>
+      <Is32Bit>false</Is32Bit>
+      <IsDefault>false</IsDefault>
+      <Isolated>false</Isolated>
+      <ServerNames xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>BTS1COMPUTERNAME</a:string>
+        <a:string>BTS2COMPUTERNAME</a:string>
+      </ServerNames>
+      <ServiceAccountPassword>USERPASSWORD</ServiceAccountPassword>
+      <ServiceAccountUserName>USERACCOUNT</ServiceAccountUserName>
+    </HostData>
+    <HostData>
+      <AuthenticationTrusted>false</AuthenticationTrusted>
+      <DoTracking>false</DoTracking>
+      <HostName>HOSTNAME3</HostName>
+      <Is32Bit>false</Is32Bit>
+      <IsDefault>false</IsDefault>
+      <Isolated>false</Isolated>
+      <ServerNames xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>BTS1COMPUTERNAME</a:string>
+        <a:string>BTS2COMPUTERNAME</a:string>
+      </ServerNames>
+      <ServiceAccountPassword>USERPASSWORD</ServiceAccountPassword>
+      <ServiceAccountUserName>USERACCOUNT</ServiceAccountUserName>
+    </HostData>
+    <HostData>
+      <AuthenticationTrusted>false</AuthenticationTrusted>
+      <DoTracking>false</DoTracking>
+      <HostName>HOSTNAME4</HostName>
+      <Is32Bit>false</Is32Bit>
+      <IsDefault>false</IsDefault>
+      <Isolated>false</Isolated>
+      <ServerNames xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>BTS1COMPUTERNAME</a:string>
+        <a:string>BTS2COMPUTERNAME</a:string>
+      </ServerNames>
+      <ServiceAccountPassword>USERPASSWORD</ServiceAccountPassword>
+      <ServiceAccountUserName>USERACCOUNT</ServiceAccountUserName>
+    </HostData>
+  </Hosts>
+  <ServersForDefaultHosts xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <a:string>BTS1COMPUTERNAME</a:string>
+  </ServersForDefaultHosts>
+  <ServiceAccountData>
+    <BREServiceAccountPassword>USERPASSWORD</BREServiceAccountPassword>
+    <BREServiceAccountUserName>USERACCOUNT</BREServiceAccountUserName>
+    <DefaultInProcHostPassword>USERPASSWORD</DefaultInProcHostPassword>
+    <DefaultInProcHostUserName>USERACCOUNT</DefaultInProcHostUserName>
+    <DefaultIsolatedHostPassword>USERPASSWORD</DefaultIsolatedHostPassword>
+    <DefaultIsolatedHostUserName>USERACCOUNT</DefaultIsolatedHostUserName>
+    <SSOServiceAccountPassword>USERPASSWORD</SSOServiceAccountPassword>
+    <SSOServiceAccountUserName>USERACCOUNT</SSOServiceAccountUserName>
+  </ServiceAccountData>
+</GlobalConfigurationData>
