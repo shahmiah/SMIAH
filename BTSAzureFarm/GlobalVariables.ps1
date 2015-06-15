@@ -72,6 +72,17 @@ $vmnameSQL01 = "$baseVMName-sql01"
 $vmnameBTS01 = "$baseVMName-bts01"
 $vmnameBTS02 = "$baseVMName-bts02"
 
+
+# This needs to be set if running from and IDE otherwise the script will determine the correct path
+$pathForIDERun = "C:\Users\shmiah\Documents\GitHub\SMIAH\BTSAzureFarm"
+if($MyInvocation.MyCommand.Path -eq $null) { $pathName = $pathForIDERun } else {$pathName = Split-Path $MyInvocation.MyCommand.Path -ErrorAction SilentlyContinue}
+"Script Path is " + $pathName
+
+
+Set-AzureSubscription -SubscriptionName $subscriptionName -CurrentStorageAccount $defaultStorageAccount -ErrorAction SilentlyContinue
+Select-AzureSubscription -SubscriptionName $subscriptionName
+
+
 # From http://michaelwasham.com/2013/04/16/windows-azure-powershell-updates-for-iaas-ga/
 # Updated with http://gallery.technet.microsoft.com/scriptcenter/Configures-Secure-Remote-b137f2fe
 # To Automate Remote Powershell

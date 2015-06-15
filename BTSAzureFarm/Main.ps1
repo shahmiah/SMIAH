@@ -32,12 +32,6 @@ if(($IsAdmin) -eq $false)
 $startTime = get-date
 "$startTime"
 
-if($MyInvocation.MyCommand.Path -eq $null) { $pathName = $pathForIDERun } else {$pathName = Split-Path $MyInvocation.MyCommand.Path -ErrorAction SilentlyContinue}
-"Script Path is " + $pathName
-
-Set-AzureSubscription -SubscriptionName $subscriptionName -CurrentStorageAccount $defaultStorageAccount -ErrorAction SilentlyContinue
-Select-AzureSubscription -SubscriptionName $subscriptionName
-
 .$pathName\GlobalVariables.ps1
 .$pathName\CreateAzureServices.ps1
 

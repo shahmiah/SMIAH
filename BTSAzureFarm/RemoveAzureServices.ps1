@@ -16,16 +16,7 @@ that arise or result from the use or distribution of the Sample Code
 1.0 (30/04/2015) - Initial release
 #>
 
-# This needs to be set if running from and IDE otherwise the script will determine the correct path
-$pathForIDERun = ""
-
-if($MyInvocation.MyCommand.Path -eq $null) { $pathName = $pathForIDERun } else {$pathName = Split-Path $MyInvocation.MyCommand.Path -ErrorAction SilentlyContinue}
-"Script Path is " + $pathName
-
-. $pathName\variables.ps1
-
-Set-AzureSubscription -SubscriptionName $subscriptionName
-Select-AzureSubscription -SubscriptionName $subscriptionName
+.$pathName\GlobalVariables.ps1
 
 Remove-AzureService -ServiceName $vmnameBTS02 -DeleteAll -Force -ErrorAction SilentlyContinue
 Remove-AzureService -ServiceName $vmnameBTS01 -DeleteAll -Force -ErrorAction SilentlyContinue

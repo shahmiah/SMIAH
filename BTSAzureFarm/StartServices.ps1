@@ -16,14 +16,7 @@ that arise or result from the use or distribution of the Sample Code
 1.0 (30/04/2015) - Initial release
 #>
 
-
-# This needs to be set if running from and IDE otherwise the script will determine the correct path
-$pathForIDERun = ""
-
-if($MyInvocation.MyCommand.Path -eq $null) { $pathName = $pathForIDERun } else {$pathName = Split-Path $MyInvocation.MyCommand.Path -ErrorAction SilentlyContinue}
-"Script Path is " + $pathName
-
-. $pathName\GV.ps1
+.$pathName\GlobalVariables.ps1
 
 Set-AzureSubscription -SubscriptionName $subscriptionName -CurrentStorageAccountName $defaultStorageAccount -ErrorAction SilentlyContinue
 Select-AzureSubscription -SubscriptionName $subscriptionName
